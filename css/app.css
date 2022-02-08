@@ -1,11 +1,37 @@
 body {
-  position: relative; 
-  background-color:rgb(136, 1, 1);
+  margin: 0px;
+  background-color:beige;
 }
 
-.navbar-light {
-  background-color: salmon !important;
+.navbar {
+  position: fixed;
+  background-color:khaki;
+  width: 100%;
+  padding: 20px;
+  display: inline;
+  float: inline-start;
+  flex: auto;
+  flex-direction: row;
+  flex-wrap: wrap;
 }
+
+.nav-brand:any-link {
+  text-decoration: none;
+  color: black;
+  text-align: center;
+  font-size: xx-large;
+}
+
+.nav-list {
+  list-style-type: none;
+  display: inline;
+}
+
+.nav-item {
+  display: inline;
+}
+
+
 
   
   

@@ -5,41 +5,21 @@
   <!-- Required meta tags -->
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <!-- Bootstrap CSS -->
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
-    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-  <link href="css/small-business.css" rel="stylesheet">
+  <!-- CSS -->
+  <link href="css/app.css" rel="stylesheet">
   <title>John the Fourth</title>
 </head>
 
 <body>
-  <nav id="home-nav-bar" class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
-    <div class="container">
-      <a class="navbar-brand" href="http://john-the-fourth.engineer/">John the Fourth</a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
-        aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarResponsive">
-        <ul class="navbar-nav ml-auto">
-          <li class="nav-item">
-            <a class="nav-link" href="#home">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#live">Live demos!</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#skills">Skills</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#projects">Projects</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#contacts">Contact</a>
-          </li>
-        </ul>
-      </div>
-    </div>
+  <nav class="navbar">
+    <a class="nav-brand" href="http://john-the-fourth.engineer/">John the Fourth</a>
+    <ul calss="nav-list">
+      <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+      <li class="nav-item"><a class="nav-link" href="#live">Live demos!</a></li>
+      <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+      <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+      <li class="nav-item"><a class="nav-link" href="#contacts">Contact</a></li>
+    </ul>
   </nav>
   <!-- Page Content -->
   <div class="container" data-spy="scroll" data-target="#home-nav-bar" data-offset=80>
@@ -207,52 +187,6 @@
     </div>
     <!-- /.container -->
   </footer>
-  <!-- Optional JavaScript -->
-  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-    crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
-    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-    crossorigin="anonymous"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
-    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-    crossorigin="anonymous"></script>
-  <script>
-    var offset = 80;
-
-    $('.navbar li a').click(function (event) {
-      console.log("hi there")
-      event.preventDefault();
-      $($(this).attr('href'))[0].scrollIntoView();
-      scrollBy(0, -offset);
-    });
-    $(document).ready(function () {
-
-      // Scroll spy
-      $('body').scrollspy({
-        target: "#home-nav-bar"
-      });
-
-      // Navbar fade
-      changeNavbar();
-
-      $(window).scroll(function () {
-        changeNavbar();
-      });
-
-      function changeNavbar() {
-        var navbar = $("#home-nav-bar");
-        console.log("changed")
-        if ($(this).scrollTop() >= 100) {
-          navbar.addClass("active");
-        } else if ($(this).scrollTop() < 100) {
-          navbar.removeClass("active");
-        }
-      }
-    });
-  </script>
   <script src="js/game.js"></script>
 </body>
-
 </html>
