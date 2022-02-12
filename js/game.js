@@ -3,6 +3,7 @@ function main(width, height) {
   var ctx = canvas.getContext("2d");
   var width = canvas.getAttribute('width');
   var height = canvas.getAttribute('height');
+  console.log(width,height)
   var board = new GameOfLifeBoard(width, height);
   var interval = setInterval(function () { gameLoop(ctx, canvas, board); }, 500);
   document.getElementById("reset").addEventListener("click", function () {
@@ -120,7 +121,7 @@ class Cell {
       color = this.colors[this.aliveNeighbors + 1];
     }
     ctx.fillStyle = color;
-    ctx.fillRect((cellWidth * this.column) + (cellWidth / 10), (cellHeight * this.row) + (cellHeight / 10), (cellWidth) - (cellWidth / 10), (cellHeight) - (cellHeight / 10));
+    ctx.fillRect(parseInt((cellWidth * this.column) + (cellWidth / 10)), parseInt((cellHeight * this.row) + (cellHeight / 10)), parseInt((cellWidth) - (cellWidth / 10)), parseInt((cellHeight) - (cellHeight / 10)));
   }
 }
 

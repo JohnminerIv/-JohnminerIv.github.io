@@ -1,37 +1,103 @@
+* {
+  box-sizing: border-box;
+  padding: 0%;
+  margin: 0%;
+}
+
 body {
-  margin: 0px;
-  background-color:beige;
+  background-color: rgb(255, 250, 206);
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(1, minmax(0, 1fr));
+  gap: 10px;
+  grid-template-areas:
+  'n'
+  'i'
+  'g'
+  's'
+  's1'
+  's2'
+  's3'
+  'd'
+  'p'
+  'p1'
+  'p2'
+  'p3'
+  'c'
+  'f'
+  ;
 }
 
 .navbar {
-  position: fixed;
-  background-color:khaki;
-  width: 100%;
-  padding: 20px;
-  display: inline;
-  float: inline-start;
-  flex: auto;
-  flex-direction: row;
+  grid-area: n;
+  background-color: darkred;
+}
+nav ul {
+  list-style-type: none;
+  display: flex;
   flex-wrap: wrap;
 }
 
-.nav-brand:any-link {
+nav ul li {
+  margin-right: 1px;
+}
+.button {
+  display: block;
   text-decoration: none;
   color: black;
-  text-align: center;
-  font-size: xx-large;
+  border: 0px;
+  font-family: serif;
+  font-size: medium;
+  background-color: rgb(255, 196, 0);
+  padding: 10px;
 }
 
-.nav-list {
-  list-style-type: none;
-  display: inline;
+.button:hover, .button:active {
+  background-color: rgb(255, 145, 0);
 }
 
-.nav-item {
-  display: inline;
+.game{
+  grid-area: g;
+  width: 100%;
+}
+
+.intro{grid-area: i;}
+
+.skills{grid-area: s;}
+
+.skill1{grid-area: s1;}
+.skill2{grid-area: s2;}
+.skill3{grid-area: s3;}
+
+.demos{grid-area: d;}
+
+.projects{grid-area: p;}
+
+.project1{grid-area: p1;}
+.project2{grid-area: p2;}
+.project3{grid-area: p3;}
+
+.contacts{grid-area: c;}
+
+.footer{grid-area: f;}
+
+
+@media only screen and (min-width: 768px) {
+  .grid-container{
+    grid-template-columns: repeat(12, minmax(0, 1fr));
+    grid-template-areas: 
+    'n n n n n n n n n n n n'
+    '. g g g g i i i i i i .'
+    '. . . . s s s s . . . .'
+    '. . s1 s1 . s2 s2 . s3 s3 . .'
+    '. . . . d d d d . . . .'
+    '. . . . p p p p . . . .'
+    '. . p1 p1 . p2 p2 . p3 p3 . .'
+    '. c c c c c c c c c c .'
+    'f f f f f f f f f f f f';
+  }
 }
 
 
-
-  
-  

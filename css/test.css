@@ -1,0 +1,25 @@
+body {
+    margin: 0px;
+}
+nav {
+    background-color: aqua;
+    width: 100%;
+    display: flex;
+}
+nav ul {
+    list-style-type: none;
+    display: inherit;
+    padding: 0px;
+    margin: 0px;
+}
+
+nav ul li {
+    display: inline;
+    float: left;
+}
+
+nav ul li a {
+    background-color: aquamarine;
+    display: block;
+    padding: 20px;
+}
