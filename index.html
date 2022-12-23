@@ -10,20 +10,20 @@
   </head>
   <body>
     <div class="grid-container">
-      <nav class="navbar">
+      <nav class="navbar line-bottom">
         <ul>
-          <li><a class="button" href="http://john-the-fourth.engineer/">John the Fourth</a></li>
-          <li><a class="button" href="#home">Home</a></li>
-          <li><a class="button" href="#live">Live demos!</a></li>
-          <li><a class="button" href="#skills">Skills</a></li>
-          <li><a class="button" href="#projects">Projects</a></li>
-          <li><a class="button" href="#contacts">Contact</a></li>
+          <li><a class="button line-left line-right" href="http://john-the-fourth.engineer/">John the Fourth</a></li>
+          <li><a class="button line-right" href="#home">Home</a></li>
+          <li><a class="button line-right" href="#live">Live demos!</a></li>
+          <li><a class="button line-right" href="#skills">Skills</a></li>
+          <li><a class="button line-right" href="#projects">Projects</a></li>
+          <li><a class="button line-right" href="#contacts">Contact</a></li>
         </ul>
       </nav>
       <!-- Heading Row -->
       <canvas id="canvas" class="game" width="450" height="200"></canvas>
-      <div class="intro">
-        <h1>Software Engineer</h1>
+      <div class="intro ">
+        <h1 class="line-bottom">Software Engineer</h1>
         <p>
           My name is John Miner. I have a passion for machine learning, games, apps and all things computer science. I
           will have a bachelors degree of Applied CS hopefully by Aug, 2021. I'm looking for jobs to transition into
@@ -31,32 +31,12 @@
           tech company please reach out.
         </p>
         <div style="display: flex;">
-          <a class="button" class="nav-link" href="#contacts">Contact Me</a>
-          <button class="button" id='reset'>Reset Game of life</button>
+          <button class="button-inverse" id='reset'>Reset Game of life</button>
         </div>
       </div>
       <!-- /.row -->
-      <!-- Content Row -->
-      <h1 id="skills" class="skills">Skills</h1>
-      <div class="skill1">
-        <h2>Machine Learning</h2>
-        <p>I have expirience with implementing image recognition and natural language processing
-          machine leaning algorithms with Tensorflow and keras.
-        </p>
-      </div>
-      <!-- /.col-md-4 -->
-      <div class="skill2">
-        <h2 class="card-title">Back End</h2>
-        <p class="card-text">I have expirience developing RESTful apis with python and node.js.</p>
-      </div>
-      <!-- /.col-md-4 -->
-      <div class="skill3">
-        <h2 class="card-title">Front End</h2>
-        <p class="card-text">I have a bit of expirience with JavaScript and HTML.</p>
-      </div>
-      <!-- /.col-md-4 -->
       <div id="live" class="demos">
-        <h3>Live Demos</h3>
+        <h1 class="line-bottom">Live Demos</h1>
         <ul>
           <li><a href="http://rithm.dev.john-the-fourth.engineer/">Project R.I.T.H.M.</a></li>
           <li><a href="https://decision-tree.dev.john-the-fourth.engineer/">Min decision tree generation from csv</a></li>
@@ -64,10 +44,31 @@
           <li><a href="https://patre-eth.dev.john-the-fourth.engineer/">A patreon like website using Ethereum</a></li>
         </ul>
       </div>
+      <!-- Content Row -->
+      <h1 id="skills" class="skills line-bottom">
+        Skills
+      </h1>
+      <div class="skill1">
+        <h3 class="line-bottom">Machine Learning</h3>
+        <p>I have expirience with implementing image recognition and natural language processing
+          machine leaning algorithms with Tensorflow and keras.
+        </p>
+      </div>
+      <!-- /.col-md-4 -->
+      <div class="skill2">
+        <h3 class="line-bottom">Back End</h3>
+        <p>I have expirience developing RESTful apis with python and node.js.</p>
+      </div>
+      <!-- /.col-md-4 -->
+      <div class="skill3">
+        <h3 class="line-bottom">Front End</h3>
+        <p>I have a bit of expirience with JavaScript and HTML.</p>
+      </div>
+      <!-- /.col-md-4 -->
       <!-- Call to Action Well -->
-      <h3 class="projects">Some projects that are in progress.</h3>
+      <h1 id="projects" class="projects line-bottom">Projects</h1>
       <div class="project1">
-        <h5>Data Science</h5>
+        <h3 class="line-bottom">Data Science</h3>
         <ul>
           <li><a href="https://github.com/JohnminerIv/h1n1_vs_covid_19">Data Analysis Project</a></li>
           <li><a href="https://github.com/JohnminerIv/linear_regression/blob/master/final_project.ipynb">LinearRegression</a></li>
@@ -76,7 +77,7 @@
         </ul>
       </div>
       <div class="project2">
-        <h5 class="card-title text-light">Full Stack</h5>
+        <h3 class="line-bottom">Full Stack</h3>
         <ul>
           <li><a href="https://github.com/JohnminerIv/word_play">Using websockets</a></li>
           <li><a href="https://github.com/JohnminerIv/mtg_on_blockchain">Ethereum Blockchain App</a></li>
@@ -85,7 +86,7 @@
         </ul>
       </div>
       <div class="project3">
-        <h5 class="card-title text-light">Mobile</h5>
+        <h3 class="line-bottom">Mobile</h3>
         <ul>
           <li><a href="https://github.com/JohnminerIv/your_digital_tabletop">An app to play D&D,
             IOS+Android</a>
@@ -99,26 +100,26 @@
       <!-- /.container -->
       <!-- /.row -->
       <div class="contacts">
-        <h2 id="contacts">Contact Me</h2>
-        <div style="display: flex;">
-          <a class="button" href="https://www.facebook.com/john.miner.9693/">
-          facebook
+        <h1 id="contacts" class="line-bottom">Contact Me</h1>
+        <div style="display: flex;" class="line-bottom">
+          <a class="button line-right" href="https://www.facebook.com/john.miner.9693/">
+          Facebook
           </a>
-          <a class="button" href="https://www.linkedin.com/in/john-miner-61b95618a/">
-          linkedin
+          <a class="button line-right" href="https://www.linkedin.com/in/john-miner-61b95618a/">
+          Linkedin
           </a>
-          <a class="button" href="https://www.youtube.com/channel/UCClGu3v8_mcbYKkk7eIzJZg">
-          youtube
+          <a class="button line-right" href="https://www.youtube.com/channel/UCClGu3v8_mcbYKkk7eIzJZg">
+          Youtube
           </a>
           <a class="button" href="https://github.com/JohnminerIv">
-          github
+          Github
           </a>
         </div>
       </div>
       <!-- Footer -->
       <footer class="footer">
-        <div class="container">
-          <p class="m-0 text-center text-white">Copyright &copy; www.john-the-fourth.engineer 2021</p>
+        <div class="container" style="text-align: center; margin-top: 10px;margin-bottom: 10px;">
+          <p>Copyright &copy; www.john-the-fourth.engineer 2021</p>
         </div>
         <!-- /.container -->
       </footer>

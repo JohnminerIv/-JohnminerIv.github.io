@@ -1,14 +1,38 @@
+/*
+Background rgb(7, 3, 3)
+div rgb(21, 20, 82)
+Primary rgb(63, 31, 71)
+button rgb(167, 6, 13)
+button hover rgb(223, 1, 16)
+text rgb(250, 176, 141)
+*/
+
 * {
   box-sizing: border-box;
   padding: 0%;
   margin: 0%;
+  color:rgb(250, 176, 141);
 }
 
 body {
-  background-color: rgb(255, 250, 206);
+  background-color: rgb(14, 14, 14);
+}
+div {
+}
+a {
+  text-decoration: none;
+  color: darkslategrey;
+}
+a:hover, a:active {
+  text-decoration: underline;
+  color: slategrey;
+}
+ul {
+  list-style-type: none;
 }
 
 .grid-container {
+  background-color: rgba(0, 0, 0, 0);
   display: grid;
   grid-template-columns: repeat(1, minmax(0, 1fr));
   gap: 10px;
@@ -32,7 +56,6 @@ body {
 
 .navbar {
   grid-area: n;
-  background-color: darkred;
 }
 nav ul {
   list-style-type: none;
@@ -46,20 +69,52 @@ nav ul li {
 .button {
   display: block;
   text-decoration: none;
-  color: black;
+  background-color: rgb(14, 14, 14);
+  color:rgb(250, 176, 141);
   border: 0px;
   font-family: serif;
   font-size: medium;
-  background-color: rgb(255, 196, 0);
   padding: 10px;
 }
 
 .button:hover, .button:active {
-  background-color: rgb(255, 145, 0);
+  background-color: rgba(90, 14, 14);
+  text-decoration: none;
+  color:rgb(250, 176, 141);
+}
+
+.button-inverse {
+  display: block;
+  text-decoration: none;
+  background-color: rgba(90, 14, 14);
+  color:rgb(250, 176, 141);
+  border: 0px;
+  font-family: serif;
+  font-size: medium;
+  padding: 10px;
+}
+
+.button-inverse:hover, .button-inverse:active {
+  background-color: rgb(14, 14, 14);
+  text-decoration: none;
+  color:rgb(250, 176, 141);
+}
+.line-left{
+  border-left: 1px solid rgb(250, 176, 141);
+}
+.line-right{
+  border-right: 1px solid rgb(250, 176, 141);
+}
+.line-bottom{
+  border-bottom: 1px solid rgb(250, 176, 141);
+}
+.line-top{
+  border-top: 1px solid rgb(250, 176, 141);
 }
 
 .game{
   grid-area: g;
+  height: 100%;
   width: 100%;
 }
 
@@ -88,15 +143,15 @@ nav ul li {
   .grid-container{
     grid-template-columns: repeat(12, minmax(0, 1fr));
     grid-template-areas: 
-    'n n n n n n n n n n n n'
+    '. n n n n n n n n n n .'
     '. g g g g i i i i i i .'
-    '. . . . s s s s . . . .'
-    '. . s1 s1 . s2 s2 . s3 s3 . .'
-    '. . . . d d d d . . . .'
-    '. . . . p p p p . . . .'
-    '. . p1 p1 . p2 p2 . p3 p3 . .'
+    '. d d d d d d d d d d .'
+    '. s s s s s s s s s s .'
+    '. s1 s1 . s2 s2 . s3 s3 . . .'
+    '. p p p p p p p p p p .'
+    '. p1 p1 . p2 p2 . p3 p3 . . .'
     '. c c c c c c c c c c .'
-    'f f f f f f f f f f f f';
+    '. f f f f f f f f f f .';
   }
 }
 

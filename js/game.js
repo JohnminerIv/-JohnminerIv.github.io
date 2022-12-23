@@ -63,7 +63,7 @@ class GameOfLifeBoard {
     this.cellHeight = height / 13;
   }
   drawBoard(ctx) {
-    ctx.fillStyle = '#FFFFFF';
+    ctx.fillStyle = '#0D0D0D';
     ctx.fillRect(0, 0, this.width, this.height)
     for (var c = 0; c < 30; c++) {
       for (var r = 0; r < 13; r++) {
@@ -77,7 +77,7 @@ class GameOfLifeBoard {
 
 class Cell {
   aliveNeighbors;
-  colors = ['#FFFFFF', '#F7D3AC', '#EEA659', '#D38066', '#B85972', '#AB4678', '#9D327E', '#901F84', '#820B8A'];
+  colors = ['#0E0D0D', '#422020', '#533030', '#644040', '#755050', '#866060', '#977070', '#A88080', 'B99090'];
   alive;
   row;
   column;
